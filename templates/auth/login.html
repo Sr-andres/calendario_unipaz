@@ -4,6 +4,7 @@
   rel="stylesheet"
 />
 {% endblock %} {% block body%}
+
 <form class="form-signin" action="/login" method="POST">
   <img
     class="mb-4"
@@ -47,5 +48,18 @@
     <label for="password">Password</label>
   </div>
   <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+  {% if data.is_error%}
+  <div
+    style="
+      background-color: #fcedec;
+      margin-top: 50px;
+      padding: 10px;
+      border-radius: 10px;
+      color: #5f2120;
+    "
+  >
+    Las credenciales no son correctas
+  </div>
+  {% endif%}
 </form>
 {% endblock %}
