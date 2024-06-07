@@ -1,0 +1,34 @@
+{% extends './base.html' %}
+
+{% block body%}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href=".././static/css/home.css">
+</head>
+    <nav>
+        <div class="sidebar">
+            <div class="user-logo">
+                <img src="../static/img/usuario.jpg" alt="User Logo">
+            </div>
+            <div class="nav-options">
+                <a href="#reserve">Reservar</a>
+                <a href="#cancel">Cancelar</a>
+                <a href="#view">Visualizar</a>
+                <a href="/login">Cerrar sesion</a>
+
+            </div>
+            <div class="settings-logo">
+                <img src="../static/img/sett.jpg" alt="Settings Logo">
+            </div>
+        </div>
+    </nav>
+<body>
+    <div id="calendar" class="calendar">
+        <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FBogota&bgcolor=%23ffffff&title=APARTADO%20DE%20SALAS%20Y%20EQUIPOS&showTz=0&showPrint=0&showNav=0&showDate=0&src=YW5kcmVzc2FuYWJyaWE3NDRAZ21haWwuY29t&color=%23039BE5" style="border:none 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
+    </div>
+        <script src="/static/js/script.js"></script>
+</body>
+</html>
+{% endblock %}
